@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/contactus.css">
     <title>Contact Us Page</title>
 </head>
 <body>
@@ -11,15 +11,26 @@
         <ul>
             <a href="../index.html"><li>Home</li></a>
             <a href="aboutus.html"><li>About Us</li></a>
-            <a href="../index.html"><li><img src="img/CWA LOGO.png" alt="logo"></li></a>
+            <a href="../index.html"><li><img src="../img/CWA LOGO.png" alt="logo"></li></a>
             <a href="service.html"><li>Service</li></a>
-            <a href="contactus.html"><li>Contact Us</li></a>
+            <a href="contactus.html" id="contactus"><li>Contact Us</li></a>
         </ul>
     </div>
     <div class="hero">
-        <h1>CWA Transport LLC</h1>
+        <h1>Contact Us</h1>
         <h3>Trucking On Time!!!</h3>
+        <form action="#" class="form">
+            <label for="name">Name:</label>
+            <input type="text">
+            <label for="email">Email:</label>
+            <input type="text" id="email" required>
+            <label for="message">Message:</label>
+            <input type="text">
+            <label for="name">Name:</label>
+            <input type="text">
+            <button onclick="validateEmail()">Submit</button>
+        </form>
     </div>
-    <script src="js/index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>

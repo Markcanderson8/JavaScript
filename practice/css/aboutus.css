@@ -54,3 +54,17 @@ a {
 a:hover {
     cursor: pointer;
 }
+
+button {
+    width: 500px;
+    height: 30px;
+    background-color: hsl(0, 4%, 55%);
+    border-radius: 5px;
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
