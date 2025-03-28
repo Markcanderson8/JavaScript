@@ -50,4 +50,41 @@ function returnApiData() {
 
 // returnApiData();
 
-// Days left before Christmas
+// Multiplication and Division with user input
+var isClicked = false;
+
+
+function multiply() {
+    const num1 = document.getElementById("inputOne").value;
+    const num2 = document.getElementById("inputTwo").value;
+    var p = document.getElementById('myP');
+    isClicked = true;
+
+    if(isClicked) {
+        p.style.display = 'block';
+    }
+    return p.innerHTML = num1 * num2;
+}
+
+function divide() {
+    const num1 = document.getElementById("inputOne").value;
+    const num2 = document.getElementById("inputTwo").value;
+    var p = document.getElementById('myP');
+    isClicked = true;
+
+    if(isClicked && num2 != 0) {
+        p.style.display = 'block';
+        return p.innerHTML = num1 / num2;
+    }
+    else {
+        p.style.display = 'block';
+        return p.innerHTML = "Error Can't divide by zero";
+    }
+}
+
+function clearFields() {
+    document.getElementById("inputOne").value = "";
+    document.getElementById("inputTwo").value = "";
+    var p = document.getElementById('myP');
+    p.style.display = 'none';
+}

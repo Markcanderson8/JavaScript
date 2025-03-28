@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Practice Problems</title>
 </head>
 <body>
-    <script src="index.js"></script>
+    <div class="container">
+        <label for="#" class="numberOne">1st Number:</label>
+        <input type="text" id="inputOne">
+        <label for="#" class="numberTwo">2nd Number:</label>
+        <input type="text" id="inputTwo">
+        <div class="btn-container">
+            <button class="multiply" onclick="multiply()">Multiply</button>
+            <button class="division" onclick="divide()">Division</button>
+            <button class="clear" onclick="clearFields()">Clear</button>
+        </div>
+        <div>
+            <p id="myP" style="display: none;"></p>
+        </div>
+    </div>
+        <script src="index.js"></script>
 </body>
 </html>
